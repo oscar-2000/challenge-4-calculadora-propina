@@ -27,8 +27,6 @@ const DatosProvider = ({children}) => {
         setDatos(InicialData)
     }
 
-    console.log(datos);
-
     return (
         <DatosContext.Provider value={{datos, actualizarBill, actualizarTip, actualizarPersona, Reset}}>
         {children}

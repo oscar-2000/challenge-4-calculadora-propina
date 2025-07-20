@@ -55,7 +55,7 @@ export default function Formulario() {
                             max={1000000}
                             onChange={(value) => actualizarBill(value)}
                             className="font-bold [&>input]:text-right"
-                            style={{ width: '100%' }} 
+                            style={{ width: '100%', textAlign: 'right'  }} 
                             />
                         </div>
                     </div>
@@ -167,7 +167,7 @@ export default function Formulario() {
                                 setPeople(value)
                             }}
                             className="font-bold [&>input]:text-right"
-                            style={{ width: '100%' }} 
+                            style={{ width: '100%', textAlign: 'right'  }} 
                             />
                         </div>
                     </div>
