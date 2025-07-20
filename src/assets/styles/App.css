@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+#root {
+    --celeste: #c5e4e7;
+    --celeste-light: #f3f8fb;
+    --verde: #26c2ac;
+    --celeste-verde: #9ee8df;
+    --verde-oscuro: #01454b;
+    --gris: #a0abad;
+}
+
+.bg-celeste {
+    background-color: var(--celeste);
+}
+
+.bg-celeste-light {
+    background-color: var(--celeste-light);
+}
+
+.bg-verde {
+    background-color: var(--verde);
+}
+
+.bg-verde-oscuro {
+    background-color: var(--verde-oscuro);
+}
+
+/* TEXTOS */
+.texto-gris {
+    color: var(--gris);
+}
+.texto-celeste {
+    color: var(--celeste);
+}
+
+.texto-celeste-light {
+    color: var(--celeste-light);
+}
+
+.texto-verde {
+    color: var(--verde);
+}
+
+.texto-verde-oscuro {
+    color: var(--verde-oscuro);
+}
+
+.texto-naranjo {
+    color: #cc7761;
+}
+
+.borde-naranjo {
+    border-color: #cc7761;
+}
+
+:where(.css-dev-only-do-not-override-k1d7rl).ant-input-number .ant-input-number-input {
+    text-align: right;
+}
