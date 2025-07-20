@@ -44,7 +44,7 @@ export default function Formulario() {
                     }}
                     >
                     <div className="bg-[#f3f8fb] border-[2px] border-transparent duration-300 hover:border-[#5faaa1] rounded-md w-full">
-                        <div className="flex flex-row gap-2 justify-between items-center px-3 text-end">
+                        <div className="flex flex-row gap-2 justify-between items-center px-3">
                             <InputNumber 
                             addonBefore={<span className="text-[#01454b]/60 text-[1.3rem]">$</span>}
                             defaultValue={0}
@@ -54,7 +54,7 @@ export default function Formulario() {
                             decimalSeparator="."
                             max={1000000}
                             onChange={(value) => actualizarBill(value)}
-                            className="font-bold"
+                            className="font-bold [&>input]:text-right"
                             style={{ width: '100%' }} 
                             />
                         </div>
@@ -154,7 +154,7 @@ export default function Formulario() {
                     }}
                     >
                     <div className={`bg-[#f3f8fb] border-[2px] border-transparent duration-300 rounded-md w-full hover:border-[#5faaa1]  ${permitedPeople <= 0 ? 'borde-naranjo' : ''}`}>
-                        <div className="flex flex-row gap-2 justify-between items-center px-3 text-end">
+                        <div className="flex flex-row gap-2 justify-between items-center px-3">
                             <InputNumber 
                             prefix={<img src="/img/icon-person.svg" className="h-5 w-auto pe-6" alt="Person"/>}
                             defaultValue={1}
@@ -166,7 +166,7 @@ export default function Formulario() {
                                 actualizarPersona(value),
                                 setPeople(value)
                             }}
-                            className="font-bold"
+                            className="font-bold [&>input]:text-right"
                             style={{ width: '100%' }} 
                             />
                         </div>
